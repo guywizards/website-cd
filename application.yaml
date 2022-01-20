@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/egedsoft/website.git
+    repoURL: https://github.com/egedsoft/website
     targetRevision: HEAD
     path: dev
   destination:
