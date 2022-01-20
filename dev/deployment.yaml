@@ -1,19 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: sampleapp 
+  name: website 
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: sampleapp
+      app: website
   template:
     metadata:
       labels:
-        app: sampleapp 
+        app: website 
     spec:
       containers:
-        - name: sampleapp 
-          image: guywizards/test-website
+        - name: website 
+          image: guywizards/nginx
           ports:
           - containerPort: 80
